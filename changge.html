@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱沙的歌单</title>
+</head>
+<style>
+    html {
+        background-color: black;
+        color: white;
+    }
+    
+    header {
+        padding: 3rem 0 3rem 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bold;
+
+    }
+
+    header span{
+        position: relative;
+        
+    }
+
+    #star-1{
+       position: absolute;
+       display: inline;
+       transform: translateX(-100%);
+       margin-left: -50%;
+
+    }
+
+    #star-2{
+        position: absolute;
+        transform: translateX(100%);
+        margin-left: 50%;
+
+    }
+
+    .grid-container {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 3rem 0 3rem 0;
+        text-align: center;
+    }
+
+    @media (min-width: 2800px) {
+    .grid-container { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    @media (min-width: 2800px) {
+    .grid-container { grid-template-columns: repeat(5, 1fr); }
+    }
+
+    @media (max-width: 956px) {
+    .grid-container { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 674px) {
+    .grid-container { grid-template-columns: repeat(1, 1fr); }
+    }
+</style>
+<header>
+        <svg id="star-1" width="67" height="67">
+            <path  d="
+            M 35.000 48.000
+            L 53.221 60.080
+            L 47.364 39.017
+            L 64.483 25.420
+            L 42.641 24.483
+            L 35.000 4.000
+            L 27.359 24.483
+            L 5.517 25.420
+            L 22.636 39.017
+            L 16.779 60.080
+            L 35.000 48.000
+            "stroke="grey" stroke-width="3" fill="none"/>
+        </svg>
+        <svg id="star-2" width="67" height="67">
+            <path  d="
+            M 35.000 48.000
+            L 53.221 60.080
+            L 47.364 39.017
+            L 64.483 25.420
+            L 42.641 24.483
+            L 35.000 4.000
+            L 27.359 24.483
+            L 5.517 25.420
+            L 22.636 39.017
+            L 16.779 60.080
+            L 35.000 48.000
+            "stroke="grey" stroke-width="3" fill="none"/>
+        </svg>
+        <span>爱沙的歌单<br>所以我喜欢唱歌和跳舞</span>
+</header>
+<body>
+    <div class="grid-container">
+        <div>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/1576170102" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+        <div>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/880379822" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+        <div>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/1917371447" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+        <div>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/710165922" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+        <div>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/1280165212" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+        <div>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/1345071192" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+        <div>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/2801558112" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+        <div>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/2071104987" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+        <div>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/986387982" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+        <div>
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/2633284812" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+    </div> 
+</body>
+<footer>
+    @爱沙-2024
+</footer>
+</html>
