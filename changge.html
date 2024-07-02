@@ -69,6 +69,22 @@
     .grid-container { grid-template-columns: repeat(1, 1fr); }
     }
 </style>
+<script>
+    if ('loading' in HTMLIFrameElement.prototype) {
+      const iframes = document.querySelectorAll('iframe[loading="lazy"]');
+  
+      iframes.forEach(iframe => {
+        iframe.src = iframe.dataset.src;
+      });
+  
+    } else {
+      // Dynamically import the LazySizes library
+      const script = document.createElement('script');
+      script.src =
+        'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js';
+      document.body.appendChild(script);
+    }
+</script>
 <header>
         <svg id="star-1" width="67" height="67">
             <path  d="
@@ -105,34 +121,40 @@
 <body>
     <div class="grid-container">
         <div>
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/1576170102" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/1576170102" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
         <div>
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/880379822" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/880379812" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
         <div>
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/1917371447" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/957421562" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
         <div>
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/710165922" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/143172406" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
         <div>
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/1280165212" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/1917371447" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
         <div>
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/1345071192" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/1915444327" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
         <div>
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/2801558112" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/2801558112" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
         <div>
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/2071104987" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/1280165212" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
         <div>
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/986387982" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/2373775155" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
         <div>
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/2633284812" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/1847855127" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+        <div>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/2633284812" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
+        <div>
+            <iframe title="deezer-widget" loading="lazy" class="lazyload" src="https://widget.deezer.com/widget/auto/track/2174443177" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
     </div> 
 </body>
